@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 15:30:33 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 16:10:59 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	ft_intsize(int n)
 	}
 	return (size);
 }
-/*
+
 int	main(int argc, char **argv)
 {
 	char	*result;

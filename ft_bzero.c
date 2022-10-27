@@ -6,12 +6,13 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:24:51 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 15:27:33 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 16:23:34 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 /*
+#include "libft.h"
+
 void ft_bzero(void *s, size_t n)
 {
 	char	*str;
