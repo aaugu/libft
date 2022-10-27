@@ -6,8 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:43:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:43:46 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:58:03 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);

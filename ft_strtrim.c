@@ -6,8 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:42:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:42:42 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:57:59 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set);

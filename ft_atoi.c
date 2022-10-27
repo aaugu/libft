@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:01:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 10:22:36 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:28:53 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

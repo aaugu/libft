@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:19 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 12:28:39 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:39:27 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -22,7 +21,7 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	if (argc != 2)
@@ -31,3 +30,4 @@ int	main(int argc, char **argv)
 		printf("%ld\n", ft_strlen(argv[1]));
 	return (0);
 }
+*/

@@ -6,13 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:12:57 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 16:40:32 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:27:03 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd);
 

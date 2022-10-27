@@ -6,10 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:22 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:24:52 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:26:05 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n);

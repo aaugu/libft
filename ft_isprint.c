@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:15 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 10:19:01 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:25:01 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

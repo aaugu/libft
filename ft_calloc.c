@@ -6,10 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:00 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:11:22 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:23:10 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size);

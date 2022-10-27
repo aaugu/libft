@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:12 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/26 15:07:59 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:24:57 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

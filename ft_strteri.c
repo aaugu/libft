@@ -6,8 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:44:39 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:29:59 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:57:54 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));

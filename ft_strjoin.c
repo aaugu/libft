@@ -6,8 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:26:39 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 13:43:12 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:57:24 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2);

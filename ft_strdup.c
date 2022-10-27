@@ -6,12 +6,11 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:29 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/25 14:05:05 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:27:13 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int		ft_strlen(char *str);
 

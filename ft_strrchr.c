@@ -6,8 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:19:34 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:29:39 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:57:50 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c);

@@ -6,22 +6,20 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:35:26 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:29:31 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_size(int n);
+int	ft_intsize(int n);
 
 char	*ft_itoa(int n)
 {
 	int		size;
 	char	*str;
 
-	size = ft_size(n);
+	size = ft_intsize(n);
 	if (n < 0)
 		size++;
 	str = malloc(sizeof(char) * (size + 1));
@@ -44,11 +42,12 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	ft_size(int n)
+int	ft_intsize(int n)
 {
 	int	size;
 
 	size = 0;
+	n /= 10;
 	while (n)
 	{
 		size++;
@@ -56,12 +55,15 @@ int	ft_size(int n)
 	}
 	return (size);
 }
-
+/*
 int	main(int argc, char **argv)
 {
+	char	*result;
+
 	(void) argc;
 	result = ft_itoa(atoi(argv[1]));
-	printf("%s\n", result);
+	printf("%s\n", ft_itoa(atoi(argv[1])));
 	free(result);
 	return (0);
 }
+*/
