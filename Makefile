@@ -6,7 +6,7 @@
 #    By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 12:03:36 by aaugu             #+#    #+#              #
-#    Updated: 2022/10/26 17:54:01 by aaugu            ###   ########.fr        #
+#    Updated: 2022/10/27 10:24:40 by aaugu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,13 +22,14 @@ ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 OBJS = ${SRCS:.c=.o}
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror
+AR = ar rc
 RM = rm -f
 
 .c.o:
 			${GCC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
-			ar rc ${NAME} ${OBJS}
+			${AR} ${NAME} ${OBJS}
 
 all: 		${NAME}
 
