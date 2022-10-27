@@ -6,7 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:25 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/24 12:03:25 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:29:05 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);

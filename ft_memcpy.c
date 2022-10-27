@@ -6,7 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:20:09 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 10:20:10 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:25:26 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);

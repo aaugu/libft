@@ -6,7 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:33 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/24 12:03:14 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:27:39 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dsize);

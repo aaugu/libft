@@ -6,7 +6,10 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:24 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/24 12:02:25 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 11:26:59 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+void	*ft_memmove(void *dst, const void *src, size_t len);
