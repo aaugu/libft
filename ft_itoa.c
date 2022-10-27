@@ -6,12 +6,12 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:29:31 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 15:30:33 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
 int	ft_intsize(int n);
 
 char	*ft_itoa(int n)

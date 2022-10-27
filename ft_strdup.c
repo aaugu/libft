@@ -6,13 +6,13 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:29 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:27:13 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/27 14:54:37 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlen(char *str);
+size_t	ft_strlen(const char *s);
 
 char	*ft_strdup(const char *s1)
 {
@@ -33,17 +33,7 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
+/*
 int	main(int argc, char **argv)
 {
 	char	*dest;
@@ -54,3 +44,4 @@ int	main(int argc, char **argv)
 	free(dest);
 	return (0);
 }
+*/
