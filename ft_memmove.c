@@ -6,10 +6,13 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:24 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:26:12 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/28 11:57:27 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len);
+{
+	
+}

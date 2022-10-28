@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:20:09 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 16:50:38 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/28 11:47:51 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		return (0);
 	while (i < n)
 	{
-		((unsigned char *)dst)[n] = ((unsigned char *)src)[n];
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
 	return (dst);

@@ -6,10 +6,22 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:19:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 11:57:17 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/28 11:24:07 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
 
-char	*ft_strchr(const char *s, int c);
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return (s[i]);
+	}
+	return (NULL);
+}
+*/
