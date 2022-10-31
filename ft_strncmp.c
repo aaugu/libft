@@ -6,13 +6,12 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:22 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:27:41 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/10/31 10:14:04 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include "libft.h"
-
+/*
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int ft_strncmp(const char *str1, const char *str2, size_t n)
