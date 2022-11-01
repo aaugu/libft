@@ -6,26 +6,29 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/01 11:11:03 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:11:40 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-int	ft_intsize(int n);
+
+int		ft_intsize(int n);
+void	ft_convertint(int n, int size, char *str);
 
 char	*ft_itoa(int n)
 {
 	int		size;
 	char	*str;
 
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	size = ft_intsize(n);
 	if (n < 0)
 		size++;
 	str = malloc(sizeof(char) * (size + 1));
 	if (!str)
 		return (NULL);
-	str[size + 1] = '\0';
+	str[size] = '\0';
 	if (n == 0)
 		str[0] = '0';
 	if (n < 0)
@@ -33,12 +36,7 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		n *= -1;
 	}
-	while (n != 0)
-	{
-		str[size] = n % 10 + '0';
-		n /= 10;
-		size--;
-	}
+	ft_convertint(n, size, str);
 	return (str);
 }
 
@@ -46,7 +44,7 @@ int	ft_intsize(int n)
 {
 	int	size;
 
-	size = 0;
+	size = 1;
 	n /= 10;
 	while (n)
 	{
@@ -54,5 +52,22 @@ int	ft_intsize(int n)
 		n /= 10;
 	}
 	return (size);
+}
+
+void	ft_convertint(int n, int size, char *str)
+{
+	while (n > 0)
+	{
+		str[size - 1] = n % 10 + '0';
+		n /= 10;
+		size--;
+	}
+}
+/*
+int	main(int argc, char **argv)
+{
+	(void) argc;
+	printf("%s", ft_itoa(atoi(argv[1])));
+	return (0);
 }
 */
