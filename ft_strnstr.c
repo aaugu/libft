@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:25 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/01 09:59:24 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/01 11:08:28 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t		i;
 
 	i = 0;
-	if (!needle || !len)
+	if (ft_strlen(needle) > ft_strlen(haystack))
+		return (0);
+	if (!ft_strlen(needle))
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
 	{
@@ -38,12 +40,10 @@ int	is_matching(const char *str, const char *to_find, size_t i, size_t len)
 	size_t	j;
 
 	j = 0;
-	while (to_find[j] != '\0' && i < len)
-	{
-		if (to_find[j] == str[i + j])
-			j++;
-		else
-			return (0);
-	}
-	return (1);
+	while (to_find[j] && to_find[j] == str[i + j] && i + j < len)
+		j++;
+	if (to_find[j] == '\0')
+		return (1);
+	else
+		return (0);
 }
