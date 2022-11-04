@@ -6,7 +6,7 @@
 #    By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 12:03:36 by aaugu             #+#    #+#              #
-#    Updated: 2022/11/04 11:25:15 by aaugu            ###   ########.fr        #
+#    Updated: 2022/11/04 11:33:38 by aaugu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
 ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 OBJS = ${SRCS:.c=.o}
+OBJS_BONUS = ${BONUS:.c=.o}
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rc
@@ -36,6 +37,9 @@ ${NAME}:	${OBJS}
 			${AR} ${NAME} ${OBJS}
 
 all: 		${NAME}
+
+bonus:		${OBJS} ${OBJS_BONUS}
+			${AR} ${NAME} ${OBJS} ${OBJS_BONUS}
 
 clean:
 			${RM} ${OBJS}
