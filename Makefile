@@ -6,7 +6,7 @@
 #    By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 12:03:36 by aaugu             #+#    #+#              #
-#    Updated: 2022/11/04 11:33:38 by aaugu            ###   ########.fr        #
+#    Updated: 2022/11/04 15:23:26 by aaugu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,13 +39,13 @@ ${NAME}:	${OBJS}
 all: 		${NAME}
 
 bonus:		${OBJS} ${OBJS_BONUS}
-			${AR} ${NAME} ${OBJS} ${OBJS_BONUS}
+			${AR} ${NAME} ${OBJS_BONUS}
 
 clean:
-			${RM} ${OBJS}
+			${RM} ${OBJS} ${OBJS_BONUS}
 
 fclean: 	clean
-			${RM} ${NAME}
+			${RM} ${NAME} 
 
 re: 		fclean all
 
