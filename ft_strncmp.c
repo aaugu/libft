@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:22 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/01 10:12:32 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:53:38 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-/*
-int	main(void)
-{
-	char	s1[] = "\x12\xff\x65\x12\xbd\xde\xad";
-	char	s2[] = "\x12\x02";
-
-	printf("%d\n", strncmp(s1, s2, 1));
-	printf("%d\n", ft_strncmp(s1, s2, 1));
-	printf("%s", "-----\n");
-	printf("%d\n", strncmp(s1, s2, 6));
-	printf("%d\n", ft_strncmp(s1, s2, 6));
-	return (0);
-}
-*/

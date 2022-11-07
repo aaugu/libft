@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/01 13:11:40 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:52:30 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,11 +63,3 @@ void	ft_convertint(int n, int size, char *str)
 		size--;
 	}
 }
-/*
-int	main(int argc, char **argv)
-{
-	(void) argc;
-	printf("%s", ft_itoa(atoi(argv[1])));
-	return (0);
-}
-*/

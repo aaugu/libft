@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:12:57 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 16:20:18 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:53:09 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else if (nb >= 0 && nb < 10)
 		ft_putchar_fd(nb + 48, fd);
 }
-/*
-int	main(int argc, char **argv)
-{
-	(void) argc;
-	ft_putnbr_fd(atoi(argv[1]), 2);
-	ft_putchar_fd('\n', 2);
-}
-*/

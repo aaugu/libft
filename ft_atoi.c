@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:01:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 16:08:05 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:52:24 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*
-int	main(int argc, char **argv)
-{
-	if (argc != 2)
-		printf("Error\n");
-	else
-	{
-		printf("%d\n", ft_atoi(argv[1]));
-		printf("%d\n", atoi(argv[1]));
-	}
-	return (0);
-}
-*/

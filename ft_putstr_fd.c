@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:44:52 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:50:36 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:55:48 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-/*
-int	main(int argc, char **argv)
-{
-	(void) argc;
-	ft_putstr_fd(argv[1], 1);
-	return (0);
-}
-*/

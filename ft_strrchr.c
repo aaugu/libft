@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:19:34 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/31 11:27:01 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:55:30 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-int	main(void)
-{
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-	ret = strchr(str, ch);
-	printf("String after |%c| is - |%s|\n", ch, ret);
-	return (0);
-}
-*/

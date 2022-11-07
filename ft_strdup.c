@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:29 by aaugu             #+#    #+#             */
-/*   Updated: 2022/10/27 14:54:37 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 14:53:23 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,3 @@ char	*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main(int argc, char **argv)
-{
-	char	*dest;
-
-	(void) argc;
-	dest = ft_strdup(argv[1]);
-	printf("%s", dest);
-	free(dest);
-	return (0);
-}
-*/
