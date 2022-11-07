@@ -6,11 +6,22 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:25 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/01 11:08:28 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 16:27:01 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+The strnstr() function locates the first occurrence of the null-terminated
+string needle in the string haystack, where not more than len characters are
+searched. Characters that appear after a `\0' character are not searched. Since
+the strnstr() function is a FreeBSD specific API, it should only be used when
+portability is not a concern.
+If needle is an empty string, haystack is returned; if needle occurs nowhere in
+haystack, NULL is returned; otherwise a pointer to the first character of the 
+first occurrence of needle is returned.
+*/
 
 int	is_matching(const char *str, const char *to_find, size_t i, size_t len);
 
