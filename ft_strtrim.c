@@ -6,11 +6,20 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:42:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/03 11:13:53 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 15:12:02 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters 
+specified in ’set’ removed from the beginning and the end of the string, NULL
+if allocation fails.
+
+s1: The string to be trimmed.
+set: The reference set of characters to trim.
+*/
 
 int	is_in_set(char c, char const *set);
 

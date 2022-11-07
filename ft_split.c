@@ -6,11 +6,20 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:42:03 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 09:17:00 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 15:41:20 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+Allocates (with malloc(3)) and returns an array of strings obtained by splitting
+’s’ using the character ’c’ as a delimiter. The array must end with a NULL 
+pointer. Returns NULL if the allocation fails.
+
+s: The string to be split.
+c: The delimiter character.
+*/
 
 size_t	ft_countwords(char const *s, char c);
 char	**ft_freeall(char **list);

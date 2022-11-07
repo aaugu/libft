@@ -6,11 +6,19 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 14:52:30 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 15:17:53 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+Allocates (with malloc(3)) and returns a string representing the integer 
+received as an argument, or NULL if allocation fails. Negative numbers must be 
+handled.
+
+n: the integer to convert.
+*/
 
 int		ft_intsize(int n);
 void	ft_convertint(int n, int size, char *str);
