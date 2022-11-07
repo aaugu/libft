@@ -6,8 +6,14 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:28:40 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/04 11:28:42 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 10:27:04 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+	del(lst->content);
+	free(lst);
+}
