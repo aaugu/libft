@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 11:28:27 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:36:18 by aaugu            ###   ########.fr       */
+/*   Created: 2022/11/07 15:48:22 by aaugu             #+#    #+#             */
+/*   Updated: 2022/11/07 15:48:23 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Adds the node ’new’ at the end of the list.
+Iterates the list ’lst’ and applies the function ’f’ on the content of each 
+node.
 
-lst: The address of a pointer to the first link of a list.
-new: The address of a pointer to the node to be added to the list.
+lst: The address of a pointer to a node.
+f: The address of the function used to iterate on the list.
 */
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!*lst)
-	{
-		*lst = new;
+	if (!lst)
 		return ;
+	while (lst->next)
+	{
+		f(lst->content);
+		lst = lst->next;
 	}
-	ft_lstlast(*lst)->next = new;
+	f(lst->content);
 }
