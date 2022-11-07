@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:28:21 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 10:54:11 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/07 13:23:00 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (lst)
-	{
-		new->next = *lst;
-		*lst = new;
-	}
+	if (!lst)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
