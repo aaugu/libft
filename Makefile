@@ -6,7 +6,7 @@
 #    By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 12:03:36 by aaugu             #+#    #+#              #
-#    Updated: 2022/11/07 11:01:56 by aaugu            ###   ########.fr        #
+#    Updated: 2022/11/07 11:11:38 by aaugu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 OBJS = ${SRCS:.c=.o}
 OBJS_BONUS = ${BONUS:.c=.o}
+
 GCC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rc
