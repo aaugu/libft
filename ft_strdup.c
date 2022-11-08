@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:29 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:15:01 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 17:25:53 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ NULL is returned and errno is set to ENOMEM. The strndup() function copies at
 most n characters from the string s1 always NUL terminating the copied string.
 */
 
-size_t	ft_strlen(const char *s);
-
 char	*ft_strdup(const char *s1)
 {
 	int		i;
@@ -33,7 +31,7 @@ char	*ft_strdup(const char *s1)
 	dest = malloc(sizeof(*s1) * (size + 1));
 	if (!dest)
 		return (NULL);
-	while (s1[i] != '\0')
+	while (s1[i])
 	{
 		dest[i] = s1[i];
 		i++;

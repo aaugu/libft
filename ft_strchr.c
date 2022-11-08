@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:19:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:10:35 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 16:20:19 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,24 @@
 /*
 The strchr() function locates the first occurrence of c (converted to a char) in
 the string pointed to by s.  The terminating null character is considered to be
-part of the string; therefore if c is `\0', the functions locate the terminating
-`\0'. Returns a pointer to the located character, or NULL if the character does
+part of the string; therefore if c is `\0', the function locate the terminating
+`\0'. 
+Returns a pointer to the located character, or NULL if the character does
 not appear in the string.
 */
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*str;
-	int		i;
+	int	i;
 
 	i = 0;
-	str = (char *)s;
-	while (str[i])
+	while (s[i])
 	{
-		if (str[i] == (char)c)
-			return (&str[i]);
+		if (s[i] == (char)c)
+			return ((char *)(&s[i]));
 		i++;
 	}
-	if (str[i] == (char)c)
-		return (&str[i]);
-	return (0);
+	if (s[i] == (char)c)
+		return ((char *)(&s[i]));
+	return (NULL);
 }

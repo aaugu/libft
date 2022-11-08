@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:01:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 11:43:05 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 17:06:04 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 			sign *= -1;
 		i++;
 	}
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')
 			return (result * sign);

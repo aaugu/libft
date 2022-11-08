@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:00 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:08:09 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 17:10:10 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,8 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	ptr = malloc(size * count);
 	if (!ptr)
-		return (0);
+		return (NULL);
 	while (i < count * size)
-	{
-		((unsigned char *)ptr)[i] = 0;
-		i++;
-	}
+		((unsigned char *)ptr)[i++] = 0;
 	return (ptr);
 }

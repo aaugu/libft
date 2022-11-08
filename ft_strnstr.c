@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:03:25 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:27:01 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 16:54:17 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 int	is_matching(const char *str, const char *to_find, size_t i, size_t len)

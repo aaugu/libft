@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:19:34 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:27:52 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 16:21:37 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,13 @@ character does not appear in the string.
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*str;
-	int		len;
+	int	len;
 
-	str = (char *)s;
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
-		if (str[len] == (char)c)
-			return (&str[len]);
+		if (s[len] == (char)c)
+			return ((char *)&s[len]);
 		len--;
 	}
 	return (0);

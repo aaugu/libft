@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:18 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:06:46 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 16:53:26 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,14 @@ such byte exists within n bytes.
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t			i;
-	unsigned char	*str;
+	size_t	i;
 
 	i = 0;
-	str = (unsigned char *)s;
 	while (i < n)
 	{
-		if (str[i] == (unsigned char)c)
-			return (&str[i]);
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return ((unsigned char *)&s[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

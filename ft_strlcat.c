@@ -6,17 +6,16 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:33 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:21:57 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 16:05:56 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-The strlcat() function copy and concatenate strings with the same input 
-parameters and output result as snprintf(3). It is designed to be safer, more
-consistent, and less error prone replacements for the easily misused functions 
-strncpy(3) and strncat(3).
+The strlcat() function concatenate strings with the same input parameters and
+output result as snprintf(3). It is designed to be safer, more consistent, and
+less error prone replacements for the easily misused function strncat(3).
 Strlcat() take the full size of the destination buffer and guarantee 
 NUL-termination if there is room. Note that room for the NUL should be included
 in dstsize.
@@ -28,7 +27,7 @@ is not a proper string).
 If the src and dst strings overlap, the behavior is undefined.
 The strlcat() function returns the total length of the string they tried to
 create. For strlcat() that means the initial length of dst plus the length of
-src. Ifthe return value is >= dstsize, the output string has been truncated. It
+src. If the return value is >= dstsize, the output string has been truncated. It
 is the caller's responsibility to handle this.
 */
 
