@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:15 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:06:55 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 11:47:34 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 /*
 The isprint() function tests for any printing character, including space (` ').
 The value of the argument must be representable as an unsigned char or the value
-of EOF. Returns zero if the character tests false and returns non-zero if the
-character tests true.
+of EOF. 
+Returns zero if the character tests false and returns non-zero if the character
+tests true.
 */
 
 int	ft_isprint(int c)

@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:27 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:09:12 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 12:00:23 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ char) to the string b. Returns its first argument.
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*str;
-
-	str = b;
 	while (len--)
-		str[len] = c;
+		((unsigned char *)b)[len] = (unsigned char)c;
 	return (b);
 }

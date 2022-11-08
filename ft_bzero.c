@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:24:51 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:52:36 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 11:58:49 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ bzero() does nothing.
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	char	*str;
 
 	i = 0;
-	str = (char *)s;
 	while (i < n)
-		str[i++] = '\0';
+		((char *)s)[i++] = 0;
 }
