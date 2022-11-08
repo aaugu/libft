@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:53:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 15:57:56 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 18:06:12 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,10 @@ fd: The file descriptor on which to write.
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		write(fd, &s[i], 1);
-		i++;
+		write(fd, &(*s), 1);
+		s++;
 	}
 	write(fd, "\n", 1);
 }

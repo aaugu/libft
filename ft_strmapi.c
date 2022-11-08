@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:44:17 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:47:13 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 18:16:16 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	str = ft_strdup(s);
 	if (!str)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (str[i])
 	{

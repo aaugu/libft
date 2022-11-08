@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:00:32 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:17:53 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 18:04:47 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,15 @@ char	*ft_itoa(int n)
 	size = ft_intsize(n);
 	if (n < 0)
 		size++;
-	str = malloc(sizeof(char) * (size + 1));
+	str = malloc(sizeof(*str) * (size + 1));
 	if (!str)
 		return (NULL);
 	str[size] = '\0';
 	if (n == 0)
+	{
 		str[0] = '0';
+		return (str);
+	}
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -64,10 +67,9 @@ int	ft_intsize(int n)
 
 void	ft_convertint(int n, int size, char *str)
 {
-	while (n > 0)
+	while (n > 0 && size > 0)
 	{
-		str[size - 1] = n % 10 + '0';
+		str[size-- - 1] = n % 10 + '0';
 		n /= 10;
-		size--;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:12:57 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:28:00 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 18:08:42 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ fd: The file descriptor on which to write.
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long	nb;
+	long int	nb;
 
-	nb = (long)n;
+	nb = (long int)n;
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);

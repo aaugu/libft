@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:42:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:12:02 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 17:53:23 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (end > start && is_in_set(s1[end - 1], set))
 		end--;
-	str = malloc(sizeof(char) * (end - start + 1));
+	str = malloc(sizeof(*str) * (end - start + 1));
 	if (!str)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (start < end)
 		str[i++] = s1[start++];
@@ -48,14 +48,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int	is_in_set(char c, char const *set)
 {
-	size_t	i;
-
-	i = 0;
-	while (set[i])
+	while (*set)
 	{
-		if (set[i] == c)
+		if (*set == c)
 			return (1);
-		i++;
+		set++;
 	}
 	return (0);
 }

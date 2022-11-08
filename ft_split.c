@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:42:03 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:41:20 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/08 17:47:18 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ char	**ft_split(char const *s, char c)
 
 	strs = (char **)malloc(sizeof(char *) * (ft_countwords(s, c) + 1));
 	if (!strs)
-		return (0);
+		return (NULL);
 	i = 0;
 	j = 0;
-	while (i < ft_countwords(s, c) && s[j] != '\0')
+	while (i < ft_countwords(s, c) && s[j])
 	{
 		while (s[j] == c)
 			j++;
 		save = j;
-		while (s[j] != c && s[j] != '\0')
+		while (s[j] != c && s[j])
 			j++;
 		strs[i] = ft_substr(s, save, j - save);
 		if (strs[i++] == 0)
@@ -74,10 +74,7 @@ char	**ft_freeall(char **strs)
 
 	i = 0;
 	while (strs[i])
-	{
-		free(strs[i]);
-		i++;
-	}
+		free(strs[i++]);
 	free(strs);
 	return (NULL);
 }
