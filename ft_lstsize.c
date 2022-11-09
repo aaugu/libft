@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:48:44 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:48:45 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 17:35:52 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,11 @@ lst: The beginning of the list.
 int	ft_lstsize(t_list *lst)
 {
 	int		i;
-	t_list	*temp;
 
 	i = 0;
-	temp = lst;
-	while (temp)
+	while (lst)
 	{
-		temp = temp->next;
+		lst = lst->next;
 		i++;
 	}
 	return (i);

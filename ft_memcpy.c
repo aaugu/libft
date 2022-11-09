@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 10:20:09 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 16:05:34 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 16:32:48 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 The memcpy() function copies n bytes from memory area src to memory area dst. If
-dst and src overlap, behavior is undefined. Applications in which dst and src 
-might overlap should use memmove(3) instead. 
+dst and src overlap, behavior is undefined. Applications in which dst and src
+might overlap should use memmove(3) instead.
 Returns the original value of dst.
 */
 

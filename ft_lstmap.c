@@ -6,16 +6,16 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:48:33 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:48:34 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 17:12:45 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Iterates the list ’lst’ and applies the function ’f’ on the content of each 
-node. Creates a new list resulting of the successive applications of the 
-function ’f’. The ’del’ function is used to delete the content of a node if 
+Iterates the list ’lst’ and applies the function ’f’ on the content of each
+node. Creates a new list resulting of the successive applications of the
+function ’f’. The ’del’ function is used to delete the content of a node if
 needed.
 
 lst: The address of a pointer to a node.

@@ -6,14 +6,14 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:26:39 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 17:35:23 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 17:03:53 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Allocates (with malloc(3)) and returns a new string, which is the result of the 
+Allocates (with malloc(3)) and returns a new string, which is the result of the
 concatenation of ’s1’ and ’s2’, or NULL if the allocation fails
 
 s1: The prefix string.

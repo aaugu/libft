@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:24 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 16:05:46 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 16:45:08 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 The memmove() function copies len bytes from string src to string dst. The two
-strings may overlap; the copy is always done in a non-destructive manner. 
+strings may overlap; the copy is always done in a non-destructive manner.
 Returns the original value of dst.
 */
 

@@ -6,14 +6,14 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:01:56 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 17:06:04 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 16:23:01 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Converts the initial portion of the string pointed to by str to int 
+Converts the initial portion of the string pointed to by str to int
 representation.
 */
 
@@ -34,12 +34,9 @@ int	ft_atoi(const char *str)
 			sign *= -1;
 		i++;
 	}
-	while (str[i])
+	while (str[i] && (str[i] >= '0' && str[i] <= '9'))
 	{
-		if (str[i] < '0' || str[i] > '9')
-			return (result * sign);
-		else
-			result = (result * 10) + (str[i] - '0');
+		result = (result * 10) + (str[i] - '0');
 		i++;
 	}
 	return (result * sign);

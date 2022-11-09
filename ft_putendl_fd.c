@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:53:35 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 18:06:12 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 17:07:09 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	while (*s)
 	{
-		write(fd, &(*s), 1);
+		write(fd, s, 1);
 		s++;
 	}
 	write(fd, "\n", 1);

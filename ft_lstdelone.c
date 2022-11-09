@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:48:04 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/07 15:48:07 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 17:21:00 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ del: The address of the function used to delete the content.
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if (!lst || !del)
+		return ;
 	del(lst->content);
 	free(lst);
 }

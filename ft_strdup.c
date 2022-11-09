@@ -6,7 +6,7 @@
 /*   By: aaugu <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:02:29 by aaugu             #+#    #+#             */
-/*   Updated: 2022/11/08 17:25:53 by aaugu            ###   ########.fr       */
+/*   Updated: 2022/11/09 16:56:47 by aaugu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,17 @@
 The strdup() function allocates sufficient memory for a copy of the string s1,
 does the copy, and returns a pointer to it. The pointer may subsequently be used
 as an argument to the function free(3). If insufficient memory is available,
-NULL is returned and errno is set to ENOMEM. The strndup() function copies at 
+NULL is returned and errno is set to ENOMEM. The strndup() function copies at
 most n characters from the string s1 always NUL terminating the copied string.
 */
 
 char	*ft_strdup(const char *s1)
 {
 	int		i;
-	int		size;
 	char	*dest;
 
 	i = 0;
-	size = ft_strlen(s1);
-	dest = malloc(sizeof(*s1) * (size + 1));
+	dest = malloc(sizeof(*s1) * (ft_strlen(s1) + 1));
 	if (!dest)
 		return (NULL);
 	while (s1[i])
